@@ -435,6 +435,7 @@ padding: 2px;
 .page-container3{
     
     display: flex;
+    
 
 
     
@@ -445,7 +446,7 @@ padding: 2px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 50vh;
+    min-height: 50vh;
     
     
     
@@ -456,7 +457,7 @@ padding: 2px;
     background-size: cover;
     background-position: center;
     
-    height: 50vh;
+    min-height: 50vh;
     
 
 }
@@ -464,14 +465,16 @@ padding: 2px;
    
     width: 30%;
     background-color: #FF6433;
-    height:50vh;
-    margin-left: 40%;
+    min-height:50vh;
+    
 }
-.writeup{
+/* .writeup{ 
     position:absolute;
     left:-240px;
-}
-.text h4{
+}*/
+
+
+.writeup h4{
  font-family: manrope;
  font-style: normal;
  font-weight: 500;
@@ -1125,6 +1128,20 @@ text-align: left;
     flex-direction: column;
     margin: auto;
 }
+.page-container3{
+    flex-direction:column ;
+}
+.image-holder, .writeup, .image-holder2{
+    width:100%;
+    min-height: 80vh;
+}
+.lower-section h4 {
+    font-size: 24px;
+    padding-top: 10px;
+}
+.lower-section p{
+    font-size: 11px;
+}
 
 
 /* mechanic section */
@@ -1136,6 +1153,7 @@ text-align: left;
     width:100%;
 }
 
+}
 
 
 
@@ -1151,10 +1169,31 @@ text-align: left;
 
 
 
+/* tablet view */
+@media (min-width: 426px) and (max-width: 800px) {
 
+    .container{
+        width:90%;
+  
+    }
+    #hero-section{
+        width:80%;
 
+    }
+    
 
+    .text-section, .image-section{
+          width:50%;
+          
+    }
 
-   
-
+    .image-section img{
+          width:200%; 
+          
+          
+    }
+    .brand{
+        margin:auto;
+    }
+    
 }
